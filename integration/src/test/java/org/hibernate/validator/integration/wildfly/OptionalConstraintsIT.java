@@ -93,7 +93,7 @@ public class OptionalConstraintsIT extends AbstractArquillianIT {
 	private static class Order {
 
 		@DecimalMax("1000")
-		@Currency("EUR")
+		@Currency({"EUR"})
 		private MonetaryAmount amount;
 
 		private Order(MonetaryAmount amount) {
